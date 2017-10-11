@@ -1,0 +1,31 @@
+<ODM xsi:schemaLocation = "Test.xsd">
+	<siniestros>
+		<tipoVehiculo>
+			<clave_tipoVehiculo>AUT</clave_tipoVehiculo>
+		</tipoVehiculo>
+
+		<usoVehiculo>
+			<clave_usoVehiculo>01</clave_usoVehiculo>
+		</usoVehiculo>
+
+		<numeroPlaca>
+			<id_numeroPlaca>1</id_numeroPlaca>
+			<evento_numeroPlaca>2</evento_numeroPlaca>
+		</numeroPlaca>
+
+		<numeroSerie>
+			<id_numeroSerie>1</id_numeroSerie>
+			<evento_numeroSerie>3</evento_numeroSerie>
+		</numeroSerie>
+
+		<rfcContratante>
+			<id_rfcContratante>1</id_rfcContratante>
+			<evento_rfcContratante>2</evento_rfcContratante>
+		</rfcContratante>
+
+		<rfcConductor>
+			<id_rfcConductor>1</id_rfcConductor>
+			<evento_rfcConductor>1</evento_rfcConductor>
+		</rfcConductor>
+	</siniestros>
+</ODM>
