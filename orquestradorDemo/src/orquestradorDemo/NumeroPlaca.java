@@ -19,7 +19,8 @@ public class NumeroPlaca
 		this.id_numeroPlaca = id_numeroPlaca;
 	}
 	
-	public int getEventos_numeroPlaca() {
+	public int getEventos_numeroPlaca() 
+	{
 		return eventos_numeroPlaca;
 	}
 	@XmlElement(name = "eventos_numeroPlaca")
@@ -32,8 +33,13 @@ public class NumeroPlaca
 	public String toString()
 	{
 		StringBuffer stringbuffer = new StringBuffer();
-		stringbuffer.append(getId_numeroPlaca());
-		stringbuffer.append(getEventos_numeroPlaca());
+		stringbuffer.append("ID de la Placa: " + "'" + getId_numeroPlaca() + "'");
+		stringbuffer.append(" y Eventos de la Placa: " + "'" + getEventos_numeroPlaca() + "'");
+		
+		if(getEventos_numeroPlaca() > 4)
+		{
+			System.out.println("¡¡¡Está placa tiene riesgo de fraude H01!!!" + "\n");
+		}
 		
 		return stringbuffer.toString();
 	}

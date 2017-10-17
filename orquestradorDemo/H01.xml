@@ -4,13 +4,22 @@
 	<usoVehiculo>01</usoVehiculo>
 
 	<numeroPlaca>
-		<id_numeroPlaca>123abc</id_numeroPlaca>
-		<eventos_numeroPlaca>2</eventos_numeroPlaca>
+		<id_numeroPlaca>MVV-19-08</id_numeroPlaca>
+		<eventos_numeroPlaca>3</eventos_numeroPlaca>
 	</numeroPlaca>
 
-	<numeroSerie>3</numeroSerie>
+	<numeroSerie>
+		<id_numeroSerie>El Bocho azul</id_numeroSerie>
+		<eventos_numeroSerie>1</eventos_numeroSerie>
+	</numeroSerie>
 
-	<rfcContratante>2</rfcContratante>
+	<rfcContratante>
+		<id_rfcContratante>LaYessenia</id_rfcContratante>
+		<eventos_rfcContratante>30</eventos_rfcContratante>
+	</rfcContratante>
 
-	<rfcConductor>1</rfcConductor>
+	<rfcConductor>
+		<id_rfcConductor>LaYessenia</id_rfcConductor>
+		<eventos_rfcConductor>2</eventos_rfcConductor>
+	</rfcConductor>
 </siniestro>

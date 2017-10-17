@@ -1,17 +1,21 @@
 package orquestradorDemo;
 
+import java.util.List;
+
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlType;
 
 @XmlRootElement(name = "siniestro")
+@XmlType(propOrder = {"tipoVehiculo", "usoVehiculo", "numeroPlaca", "numeroSerie", "rfcContratante", "rfcConductor"})
 public class Siniestros 
 {	
 	String tipoVehiculo;
 	int usoVehiculo;
-	int numeroPlaca;
-	int numeroSerie;
-	int rfcContratante;
-	int rfcConductor;
+	List<NumeroPlaca> numeroPlaca;
+	List<NumeroSerie> numeroSerie;
+	List<RFCContratante> rfcContratante;
+	List<RFCConductor> rfcConductor;
 	
 	public String getTipoVehiculo()
 	{
@@ -32,43 +36,43 @@ public class Siniestros
 	{
 		this.usoVehiculo = usoVehiculo;
 	}
-	
-	public int getNumeroPlaca() 
+
+	List<NumeroPlaca> getNumeroPlaca()
 	{
 		return numeroPlaca;
 	}
-	@XmlElement(name = "numeroPlaca")
-	public void setNumeroPlaca(int numeroPlaca) 
+	@XmlElement(name = "numeroPlaca", type = NumeroPlaca.class)
+	public void setNumeroPlaca(List<NumeroPlaca> numeroPlaca)
 	{
 		this.numeroPlaca = numeroPlaca;
 	}
 	
-	public int getNumeroSerie() 
+	List<NumeroSerie> getNumeroSerie()
 	{
 		return numeroSerie;
 	}
-	@XmlElement(name = "numeroSerie")
-	public void setNumeroSerie(int numeroSerie) 
+	@XmlElement(name = "numeroSerie", type = NumeroSerie.class)
+	public void setNumeroSerie(List<NumeroSerie> numeroSerie)
 	{
 		this.numeroSerie = numeroSerie;
 	}
 	
-	public int getRfcContratante() 
+	List<RFCContratante> getRfcContratante()
 	{
 		return rfcContratante;
 	}
-	@XmlElement(name = "rfcContratante")
-	public void setRfcContratante(int rfcContratante) 
+	@XmlElement(name = "rfcContratante", type = RFCContratante.class)
+	public void setRfcContratante(List<RFCContratante> rfcContratante)
 	{
 		this.rfcContratante = rfcContratante;
 	}
 	
-	public int getRfcConductor() 
+	List<RFCConductor> getRfcConductor()
 	{
 		return rfcConductor;
 	}
-	@XmlElement(name = "rfcConductor")
-	public void setRfcConductor(int rfcConductor) 
+	@XmlElement(name = "rfcConductor", type = RFCConductor.class)
+	public void setRfcConductor(List<RFCConductor> rfcConductor)
 	{
 		this.rfcConductor = rfcConductor;
 	}
@@ -76,16 +80,13 @@ public class Siniestros
 	@Override
 	public String toString()
 	{
-		StringBuffer stringbuffer = new StringBuffer("Tipo de Vehiculo: " + getTipoVehiculo() + "\n");
-		if(getNumeroPlaca() > 4 || getNumeroSerie() > 4 || getRfcContratante() > 4 || getRfcConductor() > 4)
-		{
-			System.out.println("Puede ser fraude!");
-		}
+		StringBuffer stringbuffer = new StringBuffer();
+		stringbuffer.append("Tipo de Vehiculo: " + getTipoVehiculo() + "\n");
 		stringbuffer.append("Uso de Vehiculo: " + getUsoVehiculo() + "\n");
-		stringbuffer.append("Eventos del Número de Placa: " + getNumeroPlaca() + "\n");
-		stringbuffer.append("Eventos del Número de Serie: " + getNumeroSerie() + "\n");
-		stringbuffer.append("Eventos del RFC del contratante: " + getRfcContratante() + "\n");
-		stringbuffer.append("Eventos del RFC del conductor: " + getRfcConductor() + "\n");
+		stringbuffer.append(getNumeroPlaca() + "\n");
+		stringbuffer.append(getNumeroSerie() + "\n");
+		stringbuffer.append(getRfcContratante() + "\n");
+		stringbuffer.append(getRfcConductor() + "\n");
 		
 		return stringbuffer.toString();
 	}
