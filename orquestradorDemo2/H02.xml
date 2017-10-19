@@ -1,0 +1,9 @@
+<siniestro>
+	<numeroPlaca>
+		<id_numeroPlaca>MVV-19-08</id_numeroPlaca>
+		<eventos_numeroPlaca>
+				<eventosReglasID_numeroPlaca>H01</eventosReglasID_numeroPlaca>
+				<eventosReglasTotales_numeroPlaca>3</eventosReglasTotales_numeroPlaca>
+		</eventos_numeroPlaca>
+	</numeroPlaca>
+</siniestro>

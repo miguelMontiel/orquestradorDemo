@@ -1,0 +1,25 @@
+<siniestro>
+	<tipoVehiculo>AUT</tipoVehiculo>
+
+	<usoVehiculo>01</usoVehiculo>
+
+	<numeroPlaca>
+		<id_numeroPlaca>MVV-19-08</id_numeroPlaca>
+		<eventos_numeroPlaca>3</eventos_numeroPlaca>
+	</numeroPlaca>
+
+	<numeroSerie>
+		<id_numeroSerie>El Bocho azul</id_numeroSerie>
+		<eventos_numeroSerie>1</eventos_numeroSerie>
+	</numeroSerie>
+
+	<rfcContratante>
+		<id_rfcContratante>LaYessenia</id_rfcContratante>
+		<eventos_rfcContratante>30</eventos_rfcContratante>
+	</rfcContratante>
+
+	<rfcConductor>
+		<id_rfcConductor>LaYessenia</id_rfcConductor>
+		<eventos_rfcConductor>2</eventos_rfcConductor>
+	</rfcConductor>
+</siniestro>
