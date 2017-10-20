@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<products>
+    <product>
+        <name>Mundo</name>
+        <name2>Hola</name2>
+    </product>
+    <product>
+        <cost>
+            <myCost>2</myCost>
+        </cost>
+    </product>
+    <type>
+        <typeProduct>Tipo</typeProduct>
+    </type>
+</products>
